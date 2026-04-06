@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "averlon-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--platform",
+        "linux/amd64",
+        "-e",
+        "AVERLON_API_KEY",
+        "-e",
+        "AVERLON_API_SECRET",
+        "-e",
+        "SECDI_SERVER",
+        "ghcr.io/averlon-security/averlon-mcp:sha-a8e5b91"
+      ],
+      "env": {
+        "AVERLON_API_KEY": "${AVERLON_MCPCLIENT_API_KEY}",
+        "AVERLON_API_SECRET": "${AVERLON_MCPCLIENT_SECRET_KEY}",
+        "SECDI_SERVER": "https://wfe.prod.averlon.io"
+      }
+    }
+  }
+}

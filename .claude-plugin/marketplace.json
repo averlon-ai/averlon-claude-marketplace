@@ -1,0 +1,13 @@
+{
+    "name": "averlon-claude-marketplace",
+    "owner": {
+        "name": "Averlon"
+    },
+    "plugins": [
+        {
+            "name": "container-remediation",
+            "source": "./plugins/container-remediation",
+            "description": "Docker and container security analysis with vulnerability detection and remediation"
+        }
+    ]
+}
