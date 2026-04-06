@@ -1,0 +1,18 @@
+{
+    "name": "container-remediation",
+    "version": "2.0.0",
+    "description": "Docker and container security analysis with vulnerability detection and remediation",
+    "author": {
+        "name": "Averlon",
+        "url": "https://www.averlon.ai/"
+    },
+    "keywords": [
+        "security",
+        "vulnerability",
+        "remediation",
+        "container",
+        "docker",
+        "averlon"
+    ],
+    "mcpServers": "./.mcp.json"
+}
