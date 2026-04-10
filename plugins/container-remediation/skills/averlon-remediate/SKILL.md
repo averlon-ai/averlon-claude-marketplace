@@ -15,9 +15,7 @@ If `$ARGUMENTS` is provided, use it as the Dockerfile path. Otherwise, ask the u
 
 Always use the default filters: `Recommended,Exploited,Critical`. Do **not** ask the user to choose filters.
 
-Use AskUserQuestion with **one question**:
-
-- **Image repo** (header: "Image repo") — "Enter an optional image repository to help match the Dockerfile to the correct container image (e.g. docker.io/library/nginx). Leave blank to skip." — provide two options: `Skip` to skip, and a placeholder option. The user can type a custom repository via "Other".
+Ask the user for the **image repository** (e.g. `docker.io/library/nginx`) that corresponds to the Dockerfile. This field is required.
 
 ## Step 2: Detect Git Repository
 
@@ -29,7 +27,7 @@ Call the `averlon_get_container_recommendations` MCP tool with:
 - `gitRepo`: the git remote URL from Step 2
 - `path`: the Dockerfile path from Step 1
 - `filters`: `Recommended,Exploited,Critical`
-- `imageRepository`: the image repository from Step 1 (omit if not provided)
+- `imageRepository`: the image repository from Step 1
 
 Present the results to the user — summarize the vulnerabilities found, grouped by layer and package, highlighting CVE IDs, severity, and available fixes.
 

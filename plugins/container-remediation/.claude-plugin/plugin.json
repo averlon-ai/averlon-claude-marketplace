@@ -1,6 +1,6 @@
 {
     "name": "container-remediation",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Docker and container security analysis with vulnerability detection and remediation",
     "author": {
         "name": "Averlon",
