@@ -1,20 +1,10 @@
 {
   "mcpServers": {
     "averlon-mcp": {
-      "command": "docker",
+      "command": "bash",
       "args": [
-        "run",
-        "--rm",
-        "-i",
-        "--platform",
-        "linux/amd64",
-        "-e",
-        "AVERLON_API_KEY",
-        "-e",
-        "AVERLON_API_SECRET",
-        "-e",
-        "SECDI_SERVER",
-        "ghcr.io/averlon-security/averlon-mcp:sha-a8e5b91"
+        "-c",
+        "docker run --rm -i --platform linux/amd64 -e AVERLON_API_KEY -e AVERLON_API_SECRET -e SECDI_SERVER ghcr.io/averlon-security/averlon-mcp:sha-a8e5b91 2>/dev/null | grep --line-buffered -v '\"jsonrpc\":\"\"'"
       ],
       "env": {
         "AVERLON_API_KEY": "${AVERLON_MCPCLIENT_API_KEY}",
