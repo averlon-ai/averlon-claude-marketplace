@@ -19,7 +19,7 @@
       "env": {
         "AVERLON_API_KEY": "${AVERLON_MCPCLIENT_API_KEY}",
         "AVERLON_API_SECRET": "${AVERLON_MCPCLIENT_SECRET_KEY}",
-        "SECDI_SERVER": "https://wfe.prod.averlon.io"
+        "SECDI_SERVER": "${AVERLON_MCPCLIENT_SERVER}"
       }
     }
   }
