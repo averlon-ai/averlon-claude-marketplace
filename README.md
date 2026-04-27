@@ -22,6 +22,7 @@ Add these to your shell profile (`~/.zshrc`, `~/.bashrc`, etc.):
 ```bash
 export AVERLON_MCPCLIENT_API_KEY="<your Key ID>"
 export AVERLON_MCPCLIENT_SECRET_KEY="<your Key Secret>"
+export AVERLON_MCPCLIENT_SERVER="wfe.prod.averlon.io"
 ```
 
 Reload your shell or run `source ~/.zshrc` to apply.

@@ -50,7 +50,10 @@ The skill walks you through:
 
 **MCP server fails to connect**
 - Verify Docker is running: `docker ps`
-- Check your environment variables are set: `echo $AVERLON_MCPCLIENT_API_KEY`
+- Check your environment variables are set:
+  - `echo $AVERLON_MCPCLIENT_API_KEY`
+  - `echo $AVERLON_MCPCLIENT_SECRET_KEY`
+  - `echo $AVERLON_MCPCLIENT_SERVER` (should be `wfe.prod.averlon.io`)
 - Ensure the Docker image is accessible: `docker pull ghcr.io/averlon-security/averlon-mcp:sha-a8e5b91`
 
 **"No recommendations found"**
